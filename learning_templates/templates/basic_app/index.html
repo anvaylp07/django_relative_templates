@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+  {%block body_block%}
+    <h1>Welcome to Index</h1>
+    <!--<h1>{{text|upper}}</h1>-->
+    <h1>{{text|cut:'hell'}}</h1> <!--'cut' user defined funt in my_extras.py. hello will not be printed from hello world-->
+    <h1>{{number|add:"99"}} </h1>
+  {% endblock %}
+
+<!--check views.py for hello world-->
